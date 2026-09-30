@@ -40,6 +40,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: AI developers, tool designers, and software engineers.
 * **Topics**: In-depth implementation details, code snippets, advantages, and Mermaid integration diagrams for `LocalRAGTool`, `OnlineSearchTool`, and `LegalDraftingTool`.
 
+### 9. ☁️ [Production Cloud Deployment Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/CLOUD_DEPLOYMENT_GUIDE.md)
+* **Target Audience**: DevOps engineers, cloud architects, and enterprise deployment leads.
+* **Topics**: Step-by-step guide for migrating LexAgent to AWS, GCP, or Azure using Docker, Kubernetes/Cloud Run, S3/GCS Storage, and GitHub Actions CI/CD.
+
 ---
 
 ## 📁 Related Project Folders

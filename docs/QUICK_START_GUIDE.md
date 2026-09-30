@@ -98,3 +98,4 @@ All technical and operational documentation is stored inside the [`docs/`](file:
 | 🚀 [docs/ENHANCEMENTS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENHANCEMENTS.md) | System enhancements: What was changed, Why it was done, and Practical uses. |
 | ⚡ [docs/PERFORMANCE_ENHANCEMENTS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/PERFORMANCE_ENHANCEMENTS.md) | Performance & 2-Tier Caching Architecture (0.03ms query benchmark). |
 | 🛠️ [docs/TOOL_IMPLEMENTATION_GUIDE.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TOOL_IMPLEMENTATION_GUIDE.md) | Deep dive into `LocalRAGTool`, `OnlineSearchTool`, and `LegalDraftingTool` implementation. |
+| ☁️ [docs/CLOUD_DEPLOYMENT_GUIDE.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/CLOUD_DEPLOYMENT_GUIDE.md) | Step-by-step guide for migrating LexAgent to AWS, GCP, or Azure. |

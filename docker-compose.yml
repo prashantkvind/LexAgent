@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  lexagent-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lexagent-web
+    ports:
+      - "8501:8501"
+    environment:
+      - PRIVATE_DOCS_DIR_NAME=private_docs
+      - SEARCH_MODEL_PROVIDER=auto
+      - OLLAMA_HOST=http://ollama-service:11434
+    volumes:
+      - ./private_docs:/app/private_docs
+      - ./generated_docs:/app/generated_docs
+      - ./chroma_db:/app/chroma_db
+    depends_on:
+      - ollama-service
+    restart: unless-stopped
+
+  ollama-service:
+    image: ollama/ollama:latest
+    container_name: lexagent-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

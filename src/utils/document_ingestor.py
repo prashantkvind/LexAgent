@@ -129,11 +129,24 @@ class LocalDocumentIngestor:
             metas = results["metadatas"][0] if "metadatas" in results else [{}] * len(docs)
             distances = results["distances"][0] if "distances" in results and results["distances"] else [0.0] * len(docs)
             
+            # Hybrid Keyword Re-ranking calculation
+            query_keywords = set([w.lower() for w in query_text.split() if len(w) > 3])
+            
             for doc, meta, dist in zip(docs, metas, distances):
+                doc_lower = doc.lower()
+                keyword_matches = sum(1 for kw in query_keywords if kw in doc_lower)
+                # Compute Hybrid Re-ranked Score (Lower distance is better)
+                hybrid_score = dist - (keyword_matches * 0.05)
+                
                 formatted_results.append({
                     "content": doc,
                     "metadata": meta,
-                    "distance": dist
+                    "distance": dist,
+                    "hybrid_score": round(hybrid_score, 4),
+                    "keyword_matches": keyword_matches
                 })
+
+            # Sort by Hybrid Re-ranked score ascending
+            formatted_results.sort(key=lambda x: x["hybrid_score"])
 
         return formatted_results

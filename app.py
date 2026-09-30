@@ -134,8 +134,9 @@ if "agent_result_state" in st.session_state:
             st.markdown(f"<div class='step-box'><b>{log.step_name}</b><br>{log.description}</div>", unsafe_allow_html=True)
 
     # 2. Main Output Tabs
-    tab_strategy, tab_rag, tab_search, tab_draft = st.tabs([
-        "📜 Best Action Strategy", 
+    tab_strategy, tab_discrepancy, tab_rag, tab_search, tab_draft = st.tabs([
+        "📜 Best Action Strategy",
+        "🔍 Discrepancy Matrix",
         "📄 Private RAG Sources (Tool 1)", 
         "🌐 Online Precedents (Tool 2)", 
         "📥 Document Download (Tool 3)"
@@ -143,14 +144,31 @@ if "agent_result_state" in st.session_state:
 
     with tab_strategy:
         st.subheader("🎯 Synthesized Legal Strategy & 100% Action Plan")
-        st.info("Source Attribution: Primary RAG (Local RTI Records) + General Legal LLM & HC Precedents")
+        
+        # Self-Correction & Verification Score Badge
+        score = state.fact_verification_score
+        st.markdown(f"**🤖 Agentic Self-Correction & Grounding Score:** `{score}% Confidence`")
+        st.progress(score / 100.0)
+        st.caption(state.verification_report)
+        st.markdown("---")
         st.markdown(state.final_advice)
 
+    with tab_discrepancy:
+        st.subheader("🔍 Fact & Clause Discrepancy Analysis (Brochure vs RTI Record)")
+        st.info("Compares promised developer commitments against verified public/private inspection records.")
+        if state.discrepancy_matrix:
+            import pandas as pd
+            df_disc = pd.DataFrame(state.discrepancy_matrix)
+            st.table(df_disc)
+        else:
+            st.warning("No discrepancies detected.")
+
     with tab_rag:
-        st.subheader("📄 Private Knowledge Base Findings")
+        st.subheader("📄 Private Knowledge Base Findings (Hybrid BM25 + Vector RAG)")
         if state.local_rag_output and state.local_rag_output.get("sources"):
             for src in state.local_rag_output["sources"]:
-                st.markdown(f"<span class='badge-rag'>File: {src['filename']}</span> (Chunk #{src['chunk']} | Match Similarity Distance: {src['distance']})", unsafe_allow_html=True)
+                rel_path = src.get("relative_path", src["filename"])
+                st.markdown(f"<span class='badge-rag'>File: {rel_path}</span> (Chunk #{src['chunk']} | Match Similarity Distance: {src['distance']})", unsafe_allow_html=True)
             st.markdown("---")
             st.text_area("RAG Retrieved Context Snippets", value=state.local_rag_output.get("formatted_output", ""), height=250)
         else:

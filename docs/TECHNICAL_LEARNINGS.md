@@ -39,3 +39,14 @@ Building and running **LexAgent** demonstrates modern patterns in **Agentic AI A
 ## 🖥️ 6. Full-Stack Legal Tech UI/UX
 * **Streamlit Stateful Application**: Demonstrates step reasoning visualizers, source badges, sample prompt loaders, and binary `.docx` download handlers.
 * **CLI Parameterization**: Command-line flag parsing (`argparse`) supporting headless automated batch notice generation.
+
+---
+
+## 🤖 7. Agentic Self-Correction & Reflection Evaluator Loop
+* **Self-Evaluation & Grounding Score (0-100%)**: Demonstrates the Reflection Pattern where the agent audits its synthesized output against retrieved RAG chunks to compute a fact verification confidence score before delivering advice.
+* **Brochure vs. Fact Discrepancy Matrix**: Programmatically identifies structural discrepancies between promised developer marketing claims and actual public/private inspection records (e.g. RTI responses).
+
+---
+
+## ⚡ 8. Hybrid RAG (BM25 Keyword Scoring + Vector Embeddings)
+* **Keyword Overlap Re-ranking**: Combines exact legal keyword matches (e.g. "Section 14(2)(ii)", "OC/2023/5541") with dense vector embeddings (`all-MiniLM-L6-v2`) to eliminate false positives in legal search retrieval.

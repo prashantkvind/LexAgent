@@ -27,3 +27,8 @@ class LexAgentState(BaseModel):
     final_advice: Optional[str] = None
     generated_file_path: Optional[str] = None
     generated_file_name: Optional[str] = None
+    
+    # Advanced Agentic & Hybrid RAG State
+    fact_verification_score: float = 100.0  # Self-Correction Confidence Score (0 - 100%)
+    discrepancy_matrix: List[Dict[str, str]] = Field(default_factory=list)
+    verification_report: Optional[str] = None

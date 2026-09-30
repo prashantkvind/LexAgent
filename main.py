@@ -71,8 +71,22 @@ def run_agent(controller: LexAgentController, query: str, wants_draft: bool, cli
     print("----------------------------------------------------------------------")
     print(" 📜 STRATEGY & ACTION PLAN (100% SUCCESS APPROACH)")
     print("----------------------------------------------------------------------")
+    print(f" 🤖 Agentic Self-Correction & Grounding Score: {state.fact_verification_score}% Confidence")
+    print(f" {state.verification_report}\n")
     print(state.final_advice)
     print("----------------------------------------------------------------------\n")
+
+    if state.discrepancy_matrix:
+        print("----------------------------------------------------------------------")
+        print(" 🔍 FACT & CLAUSE DISCREPANCY MATRIX (BROCHURE VS RTI RECORD)")
+        print("----------------------------------------------------------------------")
+        for item in state.discrepancy_matrix:
+            print(f" 📌 Item:               {item['item']}")
+            print(f"    Claimed Specs:      {item['claimed_specification']}")
+            print(f"    Actual RTI Fact:    {item['actual_rti_fact']}")
+            print(f"    Statutory Breach:   {item['statutory_breach']}")
+            print("    --------------------------------------------------")
+        print()
 
     if state.generated_file_path:
         print("----------------------------------------------------------------------")

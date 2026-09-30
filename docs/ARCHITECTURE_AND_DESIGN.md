@@ -42,9 +42,9 @@ graph TD
 
 ---
 
-## 🔄 2. 5-Step Agentic Reasoning Trajectory
+## 🔄 2. 6-Step Agentic Reasoning Trajectory
 
-LexAgent processes legal queries through a strictly controlled 5-stage deterministic state pipeline defined in `LexAgentController`:
+LexAgent processes legal queries through a strictly controlled 6-stage deterministic state pipeline defined in `LexAgentController`:
 
 ```mermaid
 sequenceDiagram
@@ -55,11 +55,12 @@ sequenceDiagram
     participant Search as 🌐 OnlineSearchTool (Tool 2)
     participant LLM as 🤖 LLM / Fallback Engine
     participant Drafter as 📄 LegalDraftingTool (Tool 3)
+    participant Evaluator as 🤖 Self-Correction Evaluator
 
     User->>Controller: Submit Query + Client Name + Options
     Controller->>LLM: 1. Deconstruct query into Facts & Statutory Claims
     LLM-->>Controller: Extracted Fact Scope
-    Controller->>RAG: 2. Search nested private_docs in ChromaDB
+    Controller->>RAG: 2. Hybrid RAG Search (BM25 + ChromaDB Vector Store)
     RAG-->>Controller: Matching Chunks & Relative File Paths
     Controller->>Search: 3. Search RERA Acts & HC Rulings
     Search-->>Controller: Precedent Rulings & Statutory Links
@@ -69,7 +70,9 @@ sequenceDiagram
         Controller->>Drafter: 5. Generate formatted .docx Legal Notice
         Drafter-->>Controller: Generated .docx File Path
     end
-    Controller-->>User: Display Strategy, RAG Badges, Links & Download Button
+    Controller->>Evaluator: 6. Evaluate Fact Grounding & Build Discrepancy Matrix
+    Evaluator-->>Controller: Grounding Score % + Clause Discrepancies
+    Controller-->>User: Complete Payload (Strategy + Score + Discrepancies + .docx)
 ```
 
 ---

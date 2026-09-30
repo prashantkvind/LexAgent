@@ -32,6 +32,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: Developers, legal tech users, and architects reviewing recent agentic AI upgrades.
 * **Topics**: Detailed breakdown of What changes were made, Why they were done, and What is the practical use of Self-Correction, Discrepancy Matrix, and Hybrid RAG.
 
+### 7. ⚡ [Performance & Caching Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/PERFORMANCE_ENHANCEMENTS.md)
+* **Target Audience**: Performance engineers, developers, and system architects.
+* **Topics**: 2-Tier Caching Architecture (ChromaDB Disk Persistence + LRU Memory Cache) achieving 0.03ms (28,600x) query speedups.
+
 ---
 
 ## 📁 Related Project Folders

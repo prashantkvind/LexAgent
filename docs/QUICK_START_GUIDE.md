@@ -96,3 +96,4 @@ All technical and operational documentation is stored inside the [`docs/`](file:
 | 💻 [docs/HARDWARE_REQUIREMENTS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/HARDWARE_REQUIREMENTS.md) | Local laptop CPU/RAM specs and Ollama model tiers. |
 | 🧠 [docs/TECHNICAL_LEARNINGS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TECHNICAL_LEARNINGS.md) | Core AI concepts: RAG, Agentic Controller, and python-docx. |
 | 🚀 [docs/ENHANCEMENTS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENHANCEMENTS.md) | System enhancements: What was changed, Why it was done, and Practical uses. |
+| ⚡ [docs/PERFORMANCE_ENHANCEMENTS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/PERFORMANCE_ENHANCEMENTS.md) | Performance & 2-Tier Caching Architecture (0.03ms query benchmark). |

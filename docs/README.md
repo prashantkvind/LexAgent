@@ -28,6 +28,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: Developers, AI engineers, and legal tech architects studying agent design patterns.
 * **Topics**: Tool-augmented agentic controller, local RAG with ChromaDB, 3-tier fallback architecture, python-docx legal notice generation, and zero-cloud privacy.
 
+### 6. 🚀 [System Enhancements Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENHANCEMENTS.md)
+* **Target Audience**: Developers, legal tech users, and architects reviewing recent agentic AI upgrades.
+* **Topics**: Detailed breakdown of What changes were made, Why they were done, and What is the practical use of Self-Correction, Discrepancy Matrix, and Hybrid RAG.
+
 ---
 
 ## 📁 Related Project Folders

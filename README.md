@@ -21,6 +21,7 @@ All documentation is consolidated in the [`docs/`](file:///config/.gemini/antigr
 * 🏛️ **[System Architecture & Design Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ARCHITECTURE_AND_DESIGN.md)**: Mermaid system flowcharts, 5-step agent trajectory, and component mechanics.
 * 💻 **[Local Laptop Hardware Requirements](file:///config/.gemini/antigravity/scratch/LexAgent/docs/HARDWARE_REQUIREMENTS.md)**: CPU, RAM, SSD specs and performance metrics for 100+ documents.
 * 🧠 **[Key Technical Learnings](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TECHNICAL_LEARNINGS.md)**: Agentic controller design, local ChromaDB RAG, multi-tier fallbacks, and python-docx legal drafting.
+* 🚀 **[System Enhancements Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENHANCEMENTS.md)**: What was added, why it was done, and practical uses of Self-Correction, Discrepancy Matrix, and Hybrid RAG.
 
 ---
 

@@ -20,6 +20,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: Software architects, legal tech designers, and code contributors.
 * **Topics**: Component topology, Mermaid architecture flowcharts, 5-step agentic controller trajectory, multi-tier search fallbacks, ChromaDB vector store mechanics, `python-docx` legal drafting engine, and Pydantic state schemas.
 
+### 4. 💻 [Local Laptop Hardware Requirements](file:///config/.gemini/antigravity/scratch/LexAgent/docs/HARDWARE_REQUIREMENTS.md)
+* **Target Audience**: Users and system administrators assessing hardware specs for searching 100+ documents.
+* **Topics**: CPU, RAM, SSD, and GPU requirements, resource benchmarks for 100 documents, and local LLM vs lightweight mode.
+
 ---
 
 ## 📁 Related Project Folders

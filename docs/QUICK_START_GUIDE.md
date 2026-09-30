@@ -92,4 +92,7 @@ All technical and operational documentation is stored inside the [`docs/`](file:
 | :--- | :--- |
 | ⚡ [docs/QUICK_START_GUIDE.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/QUICK_START_GUIDE.md) | This 2-minute quick start guide. |
 | 💻 [docs/LOCAL_INSTALLATION_GUIDE.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/LOCAL_INSTALLATION_GUIDE.md) | Full installation, virtualenv, and troubleshooting guide. |
-| 🏛️ [docs/ARCHITECTURE_AND_DESIGN.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ARCHITECTURE_AND_DESIGN.md) | System architecture, Mermaid diagrams, and tool specifications. |
+| 🏛️ [docs/ARCHITECTURE_AND_DESIGN.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ARCHITECTURE_AND_DESIGN.md) | System architecture, 6-step trajectory Mermaid diagrams, and tool specifications. |
+| 💻 [docs/HARDWARE_REQUIREMENTS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/HARDWARE_REQUIREMENTS.md) | Local laptop CPU/RAM specs and Ollama model tiers. |
+| 🧠 [docs/TECHNICAL_LEARNINGS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TECHNICAL_LEARNINGS.md) | Core AI concepts: RAG, Agentic Controller, and python-docx. |
+| 🚀 [docs/ENHANCEMENTS.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENHANCEMENTS.md) | System enhancements: What was changed, Why it was done, and Practical uses. |

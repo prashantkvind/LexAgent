@@ -48,6 +48,30 @@ For **100 local documents** (~500 to 2,000 paragraph chunks):
 
 ---
 
+## 🦙 Ollama Local LLM Model Hardware Tiers
+
+When running local models via **Ollama**, hardware requirements depend on the model parameter size and quantization level (4-bit default Q4_K_M):
+
+| Model Class | Example Models | Model Download Size | Minimum RAM / VRAM | Recommended Laptop Specs | Tokens/Sec Speed |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Lightweight (3B - 4B)** | `phi3:mini`, `llama3.2:3b`, `qwen2.5:3b` | **~2.0 GB - 2.5 GB** | **8 GB RAM** | Intel i5 / Ryzen 5 / Apple M1 | ~25 - 45 tok/s |
+| **Standard (7B - 8B)** *(Best for LexAgent)* | `mistral:latest`, `llama3:8b`, `qwen2.5:7b` | **~4.1 GB - 4.7 GB** | **16 GB RAM** (or 6GB VRAM) | Intel i7 / Ryzen 7 / Apple M1/M2/M3 (16GB) | ~20 - 40 tok/s |
+| **Advanced (13B - 14B)** | `qwen2.5:14b`, `gemma2:9b` | **~8.0 GB - 9.0 GB** | **32 GB RAM** (or 12GB VRAM) | Apple M-Max/M-Pro / RTX 4070/4080 | ~15 - 30 tok/s |
+
+### 🎯 Key Ollama Pull Commands for LexAgent
+
+```bash
+# Recommended 7B/8B Models (Requires 16GB RAM)
+ollama pull mistral
+ollama pull llama3
+
+# Fast Lightweight Models (Runs on 8GB RAM)
+ollama pull llama3.2:3b
+ollama pull phi3
+```
+
+---
+
 ## ⚡ Performance Optimization Tips for 100+ Documents
 
 1. **Use SSD Storage**: Keep your document folder (`private_docs/`) on an SSD rather than a mechanical hard drive for 10x faster document parsing during initial startup.

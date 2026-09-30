@@ -24,6 +24,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: Users and system administrators assessing hardware specs for searching 100+ documents.
 * **Topics**: CPU, RAM, SSD, and GPU requirements, resource benchmarks for 100 documents, and local LLM vs lightweight mode.
 
+### 5. 🧠 [Key Technical Learnings](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TECHNICAL_LEARNINGS.md)
+* **Target Audience**: Developers, AI engineers, and legal tech architects studying agent design patterns.
+* **Topics**: Tool-augmented agentic controller, local RAG with ChromaDB, 3-tier fallback architecture, python-docx legal notice generation, and zero-cloud privacy.
+
 ---
 
 ## 📁 Related Project Folders

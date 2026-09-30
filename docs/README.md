@@ -36,6 +36,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: Performance engineers, developers, and system architects.
 * **Topics**: 2-Tier Caching Architecture (ChromaDB Disk Persistence + LRU Memory Cache) achieving 0.03ms (28,600x) query speedups.
 
+### 8. 🛠️ [Tool Implementation Guide](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TOOL_IMPLEMENTATION_GUIDE.md)
+* **Target Audience**: AI developers, tool designers, and software engineers.
+* **Topics**: In-depth implementation details, code snippets, advantages, and Mermaid integration diagrams for `LocalRAGTool`, `OnlineSearchTool`, and `LegalDraftingTool`.
+
 ---
 
 ## 📁 Related Project Folders

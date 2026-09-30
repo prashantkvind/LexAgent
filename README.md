@@ -25,6 +25,7 @@ All documentation is consolidated in the [`docs/`](file:///config/.gemini/antigr
 * ⚡ **[Performance & Caching Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/PERFORMANCE_ENHANCEMENTS.md)**: 2-Tier Caching Architecture, step-by-step optimizations, and 0.03ms (28,600x) benchmark metrics.
 * 🛠️ **[Tool Implementation Architecture Guide](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TOOL_IMPLEMENTATION_GUIDE.md)**: Deep dive into `LocalRAGTool`, `OnlineSearchTool`, and `LegalDraftingTool` with code snippets, advantages, and Mermaid flow diagrams.
 * ☁️ **[Production Cloud Deployment Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/CLOUD_DEPLOYMENT_GUIDE.md)**: Step-by-step technical guide for deploying LexAgent to AWS, GCP, or Azure using Docker, S3/GCS, and GitHub Actions CI/CD.
+* 🏛️ **[Production Live Guidelines & Cost Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ProductionLiveGuideline.md)**: Live access requirements, monthly cost breakdown tiers ($5/mo, $45/mo, $210/mo), and 6 cost-minimization strategies.
 
 ---
 

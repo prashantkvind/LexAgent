@@ -44,6 +44,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: DevOps engineers, cloud architects, and enterprise deployment leads.
 * **Topics**: Step-by-step guide for migrating LexAgent to AWS, GCP, or Azure using Docker, Kubernetes/Cloud Run, S3/GCS Storage, and GitHub Actions CI/CD.
 
+### 10. 🏛️ [Production Live Guidelines & Cost Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ProductionLiveGuideline.md)
+* **Target Audience**: Law firm owners, cloud budget leads, and system administrators.
+* **Topics**: Live access requirements, monthly cost breakdown tiers ($5/mo, $45/mo, $210/mo), and 6 cost-minimization strategies.
+
 ---
 
 ## 📁 Related Project Folders

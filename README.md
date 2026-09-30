@@ -26,6 +26,7 @@ All documentation is consolidated in the [`docs/`](file:///config/.gemini/antigr
 * 🛠️ **[Tool Implementation Architecture Guide](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TOOL_IMPLEMENTATION_GUIDE.md)**: Deep dive into `LocalRAGTool`, `OnlineSearchTool`, and `LegalDraftingTool` with code snippets, advantages, and Mermaid flow diagrams.
 * ☁️ **[Production Cloud Deployment Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/CLOUD_DEPLOYMENT_GUIDE.md)**: Step-by-step technical guide for deploying LexAgent to AWS, GCP, or Azure using Docker, S3/GCS, and GitHub Actions CI/CD.
 * 🏛️ **[Production Live Guidelines & Cost Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ProductionLiveGuideline.md)**: Live access requirements, monthly cost breakdown tiers ($5/mo, $45/mo, $210/mo), and 6 cost-minimization strategies.
+* 🏛️ **[Enterprise Migration Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENTERPRISE_MIGRATION_GUIDE.md)**: Enterprise architectural changes, rationale, step-by-step implementation, and Mermaid infrastructure topology.
 
 ---
 

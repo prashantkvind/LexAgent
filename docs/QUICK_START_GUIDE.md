@@ -100,3 +100,4 @@ All technical and operational documentation is stored inside the [`docs/`](file:
 | 🛠️ [docs/TOOL_IMPLEMENTATION_GUIDE.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/TOOL_IMPLEMENTATION_GUIDE.md) | Deep dive into `LocalRAGTool`, `OnlineSearchTool`, and `LegalDraftingTool` implementation. |
 | ☁️ [docs/CLOUD_DEPLOYMENT_GUIDE.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/CLOUD_DEPLOYMENT_GUIDE.md) | Step-by-step guide for migrating LexAgent to AWS, GCP, or Azure. |
 | 🏛️ [docs/ProductionLiveGuideline.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ProductionLiveGuideline.md) | Requirements for live access, cost tiers ($5/mo), and cost control strategies. |
+| 🏛️ [docs/ENTERPRISE_MIGRATION_GUIDE.md](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENTERPRISE_MIGRATION_GUIDE.md) | Enterprise architectural changes, rationale, implementation, and Mermaid topology. |

@@ -48,6 +48,10 @@ This directory contains all operational, setup, architectural, and user guides f
 * **Target Audience**: Law firm owners, cloud budget leads, and system administrators.
 * **Topics**: Live access requirements, monthly cost breakdown tiers ($5/mo, $45/mo, $210/mo), and 6 cost-minimization strategies.
 
+### 11. 🏛️ [Enterprise Migration Specification](file:///config/.gemini/antigravity/scratch/LexAgent/docs/ENTERPRISE_MIGRATION_GUIDE.md)
+* **Target Audience**: Enterprise architects, Chief Information Security Officers (CISOs), and legal tech leads.
+* **Topics**: Enterprise architecture changes, rationale, step-by-step implementation, and Mermaid infrastructure topology.
+
 ---
 
 ## 📁 Related Project Folders

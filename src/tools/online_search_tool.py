@@ -1,8 +1,10 @@
 import os
 import logging
+import warnings
 from typing import Dict, Any, List
 from config import TAVILY_API_KEY
 
+warnings.filterwarnings("ignore")
 logger = logging.getLogger(__name__)
 
 class OnlineSearchTool:
